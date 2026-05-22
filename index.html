@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Communication - Comprehensive Study Summary</title>
+    <title>Data Communication - Professional Study Summary | Osei Albert Prempeh</title>
     <style>
         * {
             margin: 0;
@@ -11,83 +11,112 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
+            font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+            line-height: 1.7;
+            color: #2c3e50;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
         }
 
-        /* Navigation Bar */
+        /* Navigation Bar - Professional */
         nav {
-            background: #1a1a2e;
-            padding: 1rem 0;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 1.2rem 0;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+            border-bottom: 3px solid #667eea;
         }
 
         .nav-container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 2rem;
+            padding: 0 3rem;
         }
 
         .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: #667eea;
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             text-decoration: none;
+            letter-spacing: -0.5px;
         }
 
         .nav-links {
             display: flex;
             list-style: none;
-            gap: 2rem;
+            gap: 3rem;
         }
 
         .nav-links a {
             color: #fff;
             text-decoration: none;
-            transition: color 0.3s ease;
-            font-weight: 500;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            font-size: 1rem;
+            position: relative;
+            padding: 0.5rem 0;
         }
 
         .nav-links a:hover {
             color: #667eea;
         }
 
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #667eea;
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
         /* Main Container */
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 0 3rem;
         }
 
         /* Hero/Profile Section */
         .profile-section {
             background: white;
-            border-radius: 15px;
-            padding: 3rem;
-            margin: 2rem 0;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            padding: 4rem;
+            margin: 3rem 0;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             display: grid;
-            grid-template-columns: 250px 1fr;
-            gap: 3rem;
+            grid-template-columns: 280px 1fr;
+            gap: 4rem;
             align-items: center;
+            border-left: 6px solid #667eea;
         }
 
         .profile-image {
-            width: 250px;
-            height: 250px;
-            border-radius: 15px;
+            width: 280px;
+            height: 280px;
+            border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
+            border: 4px solid #667eea;
         }
 
         .profile-image img {
@@ -97,125 +126,150 @@
         }
 
         .profile-info h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             color: #1a1a2e;
             margin-bottom: 0.5rem;
+            font-weight: 700;
         }
 
         .student-id {
-            color: #667eea;
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
         }
 
         .profile-info p {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             color: #555;
             margin-bottom: 1rem;
-            line-height: 1.8;
+            line-height: 1.9;
+            text-align: justify;
         }
 
         /* Content Sections */
         section {
             background: white;
-            border-radius: 15px;
-            padding: 3rem;
-            margin: 2rem 0;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            scroll-margin-top: 100px;
+            border-radius: 20px;
+            padding: 4rem;
+            margin: 3rem 0;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+            scroll-margin-top: 120px;
+            border-top: 5px solid #667eea;
         }
 
         section h2 {
             color: #1a1a2e;
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 1rem;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
         }
 
         section h3 {
             color: #764ba2;
-            font-size: 1.4rem;
-            margin-top: 1.5rem;
-            margin-bottom: 1rem;
+            font-size: 1.6rem;
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
         }
 
         section p {
             color: #555;
-            margin-bottom: 1rem;
-            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            line-height: 1.9;
+            text-align: justify;
         }
 
         ul, ol {
-            margin: 1rem 0 1rem 2rem;
+            margin: 1.5rem 0 1.5rem 2.5rem;
             color: #555;
         }
 
         li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
         }
 
         /* Telegraph Diagram */
         .telegraph-diagram {
-            background: #f9f9f9;
-            border: 2px solid #667eea;
-            border-radius: 10px;
-            padding: 2rem;
-            margin: 2rem 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border: 3px solid #667eea;
+            border-radius: 15px;
+            padding: 3rem;
+            margin: 2.5rem 0;
             text-align: center;
+        }
+
+        .telegraph-diagram h3 {
+            margin-top: 0;
         }
 
         .telegraph-svg {
             max-width: 100%;
             height: auto;
-            margin: 1rem 0;
+            margin: 2rem 0;
         }
 
         /* Links Section */
         .links-section {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 3rem;
+            margin: 2.5rem 0;
         }
 
         .link-card {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 2rem;
-            border-radius: 10px;
+            padding: 2.5rem;
+            border-radius: 15px;
             color: white;
             text-decoration: none;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            border: 2px solid transparent;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
         }
 
         .link-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(102, 126, 234, 0.4);
+            border-color: white;
         }
 
         .link-card h3 {
             color: white;
-            margin-bottom: 0.5rem;
+            margin: 0;
+            font-size: 1.4rem;
         }
 
         .link-card p {
-            color: rgba(255, 255, 255, 0.9);
-            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.95);
+            font-size: 1rem;
+            margin: 0;
+            text-align: left;
         }
 
         /* Video Container */
         .video-container {
             position: relative;
             width: 100%;
-            max-width: 800px;
-            margin: 2rem auto;
+            max-width: 900px;
+            margin: 3rem auto;
             padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+            border: 3px solid #667eea;
         }
 
         .video-container iframe {
@@ -230,117 +284,205 @@
         /* Resources Section */
         .resources-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin: 2.5rem 0;
         }
 
         .resource-card {
-            background: #f0f4ff;
+            background: linear-gradient(135deg, #f0f4ff 0%, #e8f1ff 100%);
             border: 2px solid #667eea;
-            border-radius: 10px;
-            padding: 1.5rem;
+            border-radius: 15px;
+            padding: 2rem;
             text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.15);
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+            border-color: #764ba2;
         }
 
         .resource-card h4 {
             color: #1a1a2e;
             margin-bottom: 1rem;
+            font-size: 1.3rem;
         }
 
-        .resource-card a {
-            display: inline-block;
-            background: #667eea;
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background 0.3s ease;
-        }
-
-        .resource-card a:hover {
-            background: #764ba2;
+        .resource-card p {
+            color: #555;
+            font-size: 0.95rem;
         }
 
         /* Inspiration Section */
         .inspiration-box {
             background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
             color: white;
-            padding: 2.5rem;
-            border-radius: 10px;
-            margin: 2rem 0;
+            padding: 3.5rem;
+            border-radius: 15px;
+            margin: 2.5rem 0;
             font-size: 1.1rem;
-            line-height: 1.8;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            line-height: 2;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+            border-left: 6px solid #fff;
+        }
+
+        .inspiration-box p {
+            color: rgba(255, 255, 255, 0.95);
+            text-align: justify;
         }
 
         /* Footer */
         footer {
-            background: #1a1a2e;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
             color: #fff;
             text-align: center;
-            padding: 2rem;
-            margin-top: 3rem;
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+            border-top: 3px solid #667eea;
+        }
+
+        footer p {
+            margin: 0.8rem 0;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            color: #764ba2;
         }
 
         /* Responsive Design */
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             .profile-section {
                 grid-template-columns: 1fr;
             }
 
             .nav-links {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            .nav-container {
-                flex-direction: column;
-                gap: 1rem;
+                gap: 1.5rem;
             }
 
             section {
-                padding: 1.5rem;
+                padding: 2.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                padding: 0 1.5rem;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 0.8rem;
+                text-align: center;
+            }
+
+            .container {
+                padding: 0 1.5rem;
+            }
+
+            section {
+                padding: 2rem;
             }
 
             section h2 {
-                font-size: 1.5rem;
+                font-size: 1.8rem;
+            }
+
+            section h3 {
+                font-size: 1.3rem;
+            }
+
+            .profile-info h1 {
+                font-size: 2rem;
             }
         }
 
         /* Highlight styles */
         .highlight {
-            background: #fff3cd;
-            padding: 1rem;
-            border-left: 4px solid #667eea;
-            margin: 1rem 0;
-            border-radius: 5px;
+            background: linear-gradient(135deg, #fff3cd 0%, #ffe4a0 100%);
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.15);
         }
 
         .grid-2 {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin: 2.5rem 0;
         }
 
         .card {
-            background: #f9f9f9;
-            padding: 1.5rem;
-            border-radius: 10px;
+            background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);
+            padding: 2rem;
+            border-radius: 15px;
             border-top: 4px solid #667eea;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.2);
+        }
+
+        .card h4 {
+            color: #1a1a2e;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .card p {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+
+        /* Section divider */
+        .section-divider {
+            height: 4px;
+            background: linear-gradient(90deg, transparent, #667eea, transparent);
+            margin: 4rem 0;
+            border-radius: 2px;
+        }
+
+        /* Professional badge */
+        .badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-right: 0.5rem;
         }
     </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
+    <!-- Professional Navigation Bar -->
     <nav>
         <div class="nav-container">
-            <a href="#home" class="logo">DataComm 📡</a>
+            <a href="#home" class="logo">📡 DataComm Pro</a>
             <ul class="nav-links">
                 <li><a href="#fundamentals">Fundamentals</a></li>
                 <li><a href="#transmission">Transmission</a></li>
                 <li><a href="#protocols">Protocols</a></li>
+                <li><a href="#future">Future</a></li>
                 <li><a href="#resources">Resources</a></li>
             </ul>
         </div>
@@ -348,333 +490,330 @@
 
     <!-- Main Container -->
     <div class="container">
-        <!-- Profile Section -->
+        <!-- SECTION 1: Profile & Introduction -->
         <section id="home" class="profile-section">
             <div class="profile-image">
-                <img src="https://ui-avatars.com/api/?name=Osei+Albert+Prempeh&size=250&background=667eea&color=fff&bold=true" alt="Profile Picture">
+                <img src="https://ui-avatars.com/api/?name=Osei+Albert+Prempeh&size=280&background=667eea&color=fff&bold=true&font-size=0.4" alt="Osei Albert Prempeh - Profile">
             </div>
             <div class="profile-info">
                 <h1>Osei Albert Prempeh</h1>
-                <div class="student-id">Student ID: PUIT/24210132</div>
-                <p>Passionate data communication student with a keen interest in network systems, digital transmission, and information theory. I am dedicated to understanding the complexities of how data moves across networks and exploring innovative solutions for modern communication challenges. With a strong foundation in computer science, I aim to contribute to the field of telecommunications and network engineering. My academic journey is driven by curiosity and a desire to master the intricate technologies that connect our world.</p>
+                <div class="student-id">PUIT/24210132</div>
+                <p><strong>Senior Data Communication Student | Network Systems Enthusiast</strong></p>
+                <p>As a dedicated data communication student, I possess a comprehensive understanding of network systems, digital transmission protocols, and advanced information theory. My academic foundation integrates theoretical knowledge with practical applications in telecommunications infrastructure and modern networking paradigms.</p>
+                <p>My professional development encompasses expertise in network architecture, protocol design, and communication systems. I am committed to advancing the field of telecommunications through innovative solutions and research-driven approaches. With a focus on emerging technologies and global connectivity, I aim to contribute significantly to the evolution of data communication infrastructure.</p>
             </div>
         </section>
 
-        <!-- Section 1: Fundamentals of Data Communication -->
-        <section id="fundamentals">
-            <h2>📚 Fundamentals of Data Communication</h2>
-            
-            <p>Data communication is the exchange of information in the form of digital signals between two or more devices. It is fundamental to modern society and encompasses all forms of electronic communication from simple telephone calls to complex internet protocols.</p>
+        <div class="section-divider"></div>
 
-            <h3>Key Concepts</h3>
+        <!-- SECTION 2: Fundamentals of Data Communication -->
+        <section id="fundamentals">
+            <h2>📚 Section 1: Fundamentals of Data Communication</h2>
+            
+            <p>Data communication represents the systematic exchange of digital information between multiple computing devices through standardized transmission protocols and media. This discipline forms the foundational infrastructure for all modern telecommunications systems, encompassing applications ranging from simple telephony to complex enterprise networks.</p>
+
+            <h3>Core Components & Architecture</h3>
             <ul>
-                <li><strong>Source:</strong> The device that generates the data (sender)</li>
-                <li><strong>Destination:</strong> The device that receives the data (receiver)</li>
-                <li><strong>Medium:</strong> The physical pathway through which data travels</li>
-                <li><strong>Protocol:</strong> A set of rules governing data transmission</li>
-                <li><strong>Signal:</strong> The physical representation of data</li>
+                <li><strong>Source Device:</strong> Initiates data transmission by encoding information into transmittable signals</li>
+                <li><strong>Transmission Medium:</strong> Provides the physical or wireless pathway for signal propagation</li>
+                <li><strong>Destination Device:</strong> Receives and decodes signals into interpretable data</li>
+                <li><strong>Protocol Stack:</strong> Implements standardized rules for reliable data exchange</li>
+                <li><strong>Signal Representation:</strong> Converts data into physical electromagnetic phenomena</li>
             </ul>
 
-            <h3>Components of a Data Communication System</h3>
+            <h3>System Components & Requirements</h3>
             <div class="grid-2">
                 <div class="card">
-                    <h4>Hardware</h4>
-                    <p>Routers, modems, network adapters, cables, and other physical devices that facilitate communication.</p>
+                    <h4>🔧 Hardware Infrastructure</h4>
+                    <p>Network interface cards, routers, switches, modems, transceivers, and specialized transmission equipment that constitute the physical communication network.</p>
                 </div>
                 <div class="card">
-                    <h4>Software</h4>
-                    <p>Operating systems, network protocols, and applications that manage data transmission.</p>
+                    <h4>💾 Software Ecosystem</h4>
+                    <p>Operating systems, network stacks, protocol implementations, and application-layer software managing data transmission and reception processes.</p>
                 </div>
                 <div class="card">
-                    <h4>Media</h4>
-                    <p>Copper wires, fiber optics, wireless signals, and other transmission mediums.</p>
+                    <h4>📶 Transmission Media</h4>
+                    <p>Copper conductors, optical fiber, wireless frequencies, and satellite links providing diverse transmission pathways for different applications.</p>
                 </div>
                 <div class="card">
-                    <h4>Rules & Standards</h4>
-                    <p>Protocols and standards that ensure reliable and efficient data exchange.</p>
+                    <h4>⚙️ Standards & Specifications</h4>
+                    <p>International standards (IEEE, ITU) and protocols ensuring interoperability, compatibility, and reliable data exchange across heterogeneous networks.</p>
                 </div>
             </div>
 
             <div class="highlight">
-                <strong>📌 Important:</strong> Effective data communication requires proper integration of all components to ensure reliable, efficient, and secure information transfer.
+                <strong>🎯 Professional Perspective:</strong> Effective data communication systems demand comprehensive integration of all architectural components, ensuring optimal performance, security, and scalability in enterprise environments.
             </div>
         </section>
 
-        <!-- Section 2: Historical Context - Telegraph -->
-        <section id="history">
-            <h2>🔌 Historical Evolution: From Telegraph to Modern Networks</h2>
-            
-            <h3>The Telegraph - Birth of Electronic Communication</h3>
-            <p>The telegraph, invented in the 1830s, revolutionized long-distance communication by enabling the transmission of coded messages through electrical signals. This groundbreaking invention laid the foundation for all modern data communication systems.</p>
+        <div class="section-divider"></div>
 
-            <!-- Telegraph Diagram -->
+        <!-- SECTION 3: Data Transmission Methods & Telegraph History -->
+        <section id="transmission">
+            <h2>📡 Section 2: Data Transmission Methods & Historical Evolution</h2>
+
+            <h3>Telegraph: Foundation of Electronic Communication</h3>
+            <p>The telegraph, developed during the 1830s, fundamentally revolutionized long-distance communication by enabling electromagnetic signal transmission through electrical circuits. Samuel Morse's innovation introduced coded messaging through pulse duration modulation, establishing principles still relevant to modern digital communication systems.</p>
+
+            <!-- Professional Telegraph Diagram -->
             <div class="telegraph-diagram">
-                <h3>Telegraph System Diagram</h3>
-                <svg class="telegraph-svg" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+                <h3>Telegraph Communication System Architecture</h3>
+                <svg class="telegraph-svg" viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
                     <!-- Sender Side -->
-                    <rect x="20" y="40" width="120" height="80" fill="#e8f4f8" stroke="#667eea" stroke-width="2" rx="5"/>
-                    <text x="80" y="75" text-anchor="middle" font-size="14" font-weight="bold">Telegraph</text>
-                    <text x="80" y="95" text-anchor="middle" font-size="12">Transmitter</text>
-                    <text x="80" y="115" text-anchor="middle" font-size="10" fill="#666">(Sender)</text>
+                    <rect x="20" y="40" width="140" height="100" fill="#e8f4f8" stroke="#667eea" stroke-width="3" rx="8"/>
+                    <text x="90" y="80" text-anchor="middle" font-size="15" font-weight="bold">Telegraph</text>
+                    <text x="90" y="100" text-anchor="middle" font-size="13">Transmitter</text>
+                    <text x="90" y="120" text-anchor="middle" font-size="11" fill="#666">(Sender Side)</text>
 
-                    <!-- Key -->
-                    <rect x="45" y="130" width="70" height="40" fill="#fff3cd" stroke="#764ba2" stroke-width="2" rx="3"/>
-                    <text x="80" y="145" text-anchor="middle" font-size="11" font-weight="bold">Telegraph</text>
-                    <text x="80" y="160" text-anchor="middle" font-size="11" font-weight="bold">Key</text>
+                    <!-- Telegraph Key -->
+                    <rect x="45" y="155" width="90" height="45" fill="#fff3cd" stroke="#764ba2" stroke-width="2" rx="5"/>
+                    <text x="90" y="175" text-anchor="middle" font-size="12" font-weight="bold">Telegraph</text>
+                    <text x="90" y="192" text-anchor="middle" font-size="12" font-weight="bold">Key</text>
 
-                    <!-- Wires -->
-                    <line x1="140" y1="100" x2="200" y2="100" stroke="#333" stroke-width="3"/>
-                    <line x1="200" y1="80" x2="200" y2="120" stroke="#333" stroke-width="3"/>
-                    <line x1="200" y1="80" x2="600" y2="80" stroke="#ff6b6b" stroke-width="3"/>
-                    <line x1="200" y1="120" x2="600" y2="120" stroke="#333" stroke-width="3"/>
+                    <!-- Connection Wires -->
+                    <line x1="160" y1="90" x2="220" y2="90" stroke="#333" stroke-width="3"/>
+                    <line x1="220" y1="70" x2="220" y2="140" stroke="#333" stroke-width="3"/>
+                    <line x1="220" y1="70" x2="580" y2="70" stroke="#ff6b6b" stroke-width="4" stroke-dasharray="5,5"/>
+                    <line x1="220" y1="140" x2="580" y2="140" stroke="#333" stroke-width="3"/>
 
                     <!-- Receiver Side -->
-                    <rect x="600" y="40" width="120" height="80" fill="#e8f4f8" stroke="#667eea" stroke-width="2" rx="5"/>
-                    <text x="660" y="75" text-anchor="middle" font-size="14" font-weight="bold">Telegraph</text>
-                    <text x="660" y="95" text-anchor="middle" font-size="12">Receiver</text>
-                    <text x="660" y="115" text-anchor="middle" font-size="10" fill="#666">(Receiver)</text>
+                    <rect x="580" y="40" width="140" height="100" fill="#e8f4f8" stroke="#667eea" stroke-width="3" rx="8"/>
+                    <text x="650" y="80" text-anchor="middle" font-size="15" font-weight="bold">Telegraph</text>
+                    <text x="650" y="100" text-anchor="middle" font-size="13">Receiver</text>
+                    <text x="650" y="120" text-anchor="middle" font-size="11" fill="#666">(Receiver Side)</text>
 
-                    <!-- Electromagnet -->
-                    <rect x="625" y="130" width="70" height="40" fill="#fff3cd" stroke="#764ba2" stroke-width="2" rx="3"/>
-                    <text x="660" y="150" text-anchor="middle" font-size="11" font-weight="bold">Solenoid</text>
-                    <text x="660" y="163" text-anchor="middle" font-size="10">(Electromagnet)</text>
+                    <!-- Solenoid/Electromagnet -->
+                    <rect x="605" y="155" width="90" height="45" fill="#fff3cd" stroke="#764ba2" stroke-width="2" rx="5"/>
+                    <text x="650" y="175" text-anchor="middle" font-size="12" font-weight="bold">Solenoid</text>
+                    <text x="650" y="192" text-anchor="middle" font-size="11">(Electromagnet)</text>
 
-                    <!-- Signal representation -->
-                    <text x="400" y="30" text-anchor="middle" font-size="12" fill="#ff6b6b" font-weight="bold">Electrical Signal (Dots & Dashes)</text>
-                    <path d="M 200 220 Q 220 200 240 220 Q 260 240 280 220 Q 300 200 320 220" fill="none" stroke="#667eea" stroke-width="2"/>
-                    <path d="M 350 220 L 370 220" fill="none" stroke="#667eea" stroke-width="2"/>
+                    <!-- Signal Wave -->
+                    <text x="400" y="35" text-anchor="middle" font-size="13" fill="#ff6b6b" font-weight="bold">Electrical Signal Propagation</text>
+                    <path d="M 200 250 Q 220 230 240 250 Q 260 270 280 250 Q 300 230 320 250" fill="none" stroke="#667eea" stroke-width="3"/>
+                    <path d="M 350 250 L 380 250" fill="none" stroke="#667eea" stroke-width="3"/>
 
-                    <!-- Labels -->
-                    <text x="400" y="250" text-anchor="middle" font-size="11" fill="#666">Morse Code: Dots (•) and Dashes (−)</text>
-                    <text x="400" y="270" text-anchor="middle" font-size="11" fill="#666">Example: "SOS" = • • • − − − • • •</text>
+                    <!-- Morse Code Info -->
+                    <text x="400" y="300" text-anchor="middle" font-size="12" fill="#333" font-weight="bold">Morse Code Transmission</text>
+                    <text x="400" y="325" text-anchor="middle" font-size="11" fill="#555">Dots (•) = Short Pulse | Dashes (−) = Long Pulse</text>
+                    <text x="400" y="345" text-anchor="middle" font-size="10" fill="#666">Example: "SOS" = • • • − − − • • •</text>
                 </svg>
             </div>
 
-            <h3>Evolution Timeline</h3>
+            <h3>Communication Technology Evolution Timeline</h3>
             <ol>
-                <li><strong>1830s - Telegraph:</strong> Samuel Morse introduces electrical signal transmission</li>
-                <li><strong>1876 - Telephone:</strong> Alexander Graham Bell enables voice transmission</li>
-                <li><strong>1920s - Radio:</strong> Wireless transmission becomes practical</li>
-                <li><strong>1950s - Television:</strong> Complex signal transmission technology</li>
-                <li><strong>1970s - Digital Networks:</strong> Computer-to-computer communication</li>
-                <li><strong>1980s - Internet:</strong> Global interconnected networks emerge</li>
-                <li><strong>2000s-Present - Mobile & Wireless:</strong> Ubiquitous data communication</li>
+                <li><strong>1830s - Telegraph Revolution:</strong> Samuel Morse introduces electrical signal transmission, establishing first digital communication method</li>
+                <li><strong>1876 - Telephone Technology:</strong> Alexander Graham Bell enables voice transmission through continuous analog signals</li>
+                <li><strong>1920s - Radio Innovation:</strong> Wireless transmission becomes practical, enabling broadcast communications</li>
+                <li><strong>1950s - Television Era:</strong> Complex modulation schemes for multimedia signal transmission</li>
+                <li><strong>1970s - Digital Networks Emergence:</strong> Computer-to-computer communication protocols developed</li>
+                <li><strong>1980s - Internet Foundation:</strong> Global interconnected network infrastructure established</li>
+                <li><strong>2000s-Present - Mobile & Wireless Dominance:</strong> Ubiquitous data communication through cellular and WiFi technologies</li>
             </ol>
-        </section>
 
-        <!-- Section 3: Data Transmission Methods -->
-        <section id="transmission">
-            <h2>📡 Data Transmission Methods</h2>
-
-            <h3>Transmission Media Types</h3>
-            
+            <h3>Transmission Media Classification</h3>
             <div class="grid-2">
                 <div class="card">
-                    <h4>Guided Media</h4>
-                    <p><strong>Twisted Pair Cables:</strong> Most common, used in telephone and network systems. Low cost, susceptible to interference.</p>
-                    <p><strong>Coaxial Cables:</strong> Better shielding, used in cable TV and Ethernet.</p>
-                    <p><strong>Fiber Optic Cables:</strong> High speed, large bandwidth, immune to electromagnetic interference.</p>
+                    <h4>🔌 Guided Media</h4>
+                    <p><strong>Twisted Pair:</strong> Cost-effective, common in LAN and telephone infrastructure</p>
+                    <p><strong>Coaxial Cable:</strong> Superior shielding for television and broadband applications</p>
+                    <p><strong>Fiber Optic:</strong> Ultra-high bandwidth, electromagnetic immunity, long-distance transmission</p>
                 </div>
                 <div class="card">
-                    <h4>Unguided Media</h4>
-                    <p><strong>Radio Waves:</strong> WiFi, cellular networks, AM/FM radio.</p>
-                    <p><strong>Microwave:</strong> Point-to-point transmission, satellite communication.</p>
-                    <p><strong>Infrared:</strong> Short-range communication, remote controls.</p>
+                    <h4>📶 Unguided Media</h4>
+                    <p><strong>Radio Waves:</strong> WiFi, cellular networks, broadcast applications</p>
+                    <p><strong>Microwave:</strong> Point-to-point terrestrial and satellite communication</p>
+                    <p><strong>Infrared:</strong> Short-range, line-of-sight communication applications</p>
                 </div>
-            </div>
-
-            <h3>Transmission Modes</h3>
-            <ul>
-                <li><strong>Simplex:</strong> One-way communication (TV broadcast, radio)</li>
-                <li><strong>Half-Duplex:</strong> Two-way but not simultaneous (walkie-talkies)</li>
-                <li><strong>Full-Duplex:</strong> Simultaneous two-way communication (telephone, video call)</li>
-            </ul>
-
-            <h3>Signal Types</h3>
-            <div class="highlight">
-                <strong>Analog Signals:</strong> Continuous signals that vary over time (voice, music). Example: telephone signals before digitization.
-            </div>
-            <div class="highlight">
-                <strong>Digital Signals:</strong> Discrete signals represented as bits (0s and 1s). Modern computers and networks use digital signals for reliability and efficiency.
             </div>
         </section>
 
-        <!-- Section 4: Network Protocols & Standards -->
+        <div class="section-divider"></div>
+
+        <!-- SECTION 4: Network Protocols & Standards -->
         <section id="protocols">
-            <h2>🔐 Network Protocols & Standards</h2>
+            <h2>🔐 Section 3: Network Protocols & Communication Standards</h2>
 
-            <p>Protocols are the rules and standards that govern how data is formatted, transmitted, and received across networks. They ensure compatibility and reliable communication between diverse devices.</p>
+            <p>Protocols constitute the formal specifications governing data formatting, transmission, and reception across distributed networks. These standardized rules ensure seamless interoperability between diverse hardware platforms, operating systems, and application software, facilitating reliable global communication infrastructure.</p>
 
-            <h3>The OSI Model - 7 Layers</h3>
+            <h3>The OSI Reference Model - 7-Layer Architecture</h3>
             <ol>
-                <li><strong>Physical Layer:</strong> Cables, connectors, electrical signals</li>
-                <li><strong>Data Link Layer:</strong> MAC addresses, Ethernet, WiFi</li>
-                <li><strong>Network Layer:</strong> IP routing, logical addressing</li>
-                <li><strong>Transport Layer:</strong> TCP, UDP, end-to-end delivery</li>
-                <li><strong>Session Layer:</strong> Session management, connection control</li>
-                <li><strong>Presentation Layer:</strong> Data encryption, compression, formatting</li>
-                <li><strong>Application Layer:</strong> HTTP, SMTP, DNS, FTP</li>
+                <li><strong>Physical Layer (Layer 1):</strong> Electrical/optical signal transmission, cable specifications, connector types</li>
+                <li><strong>Data Link Layer (Layer 2):</strong> MAC addressing, frame formatting, Ethernet, WiFi protocols</li>
+                <li><strong>Network Layer (Layer 3):</strong> IP routing, logical addressing, packet forwarding mechanisms</li>
+                <li><strong>Transport Layer (Layer 4):</strong> TCP/UDP protocols, end-to-end delivery assurance, flow control</li>
+                <li><strong>Session Layer (Layer 5):</strong> Connection establishment, session management, termination procedures</li>
+                <li><strong>Presentation Layer (Layer 6):</strong> Data encryption, compression, format conversion, character encoding</li>
+                <li><strong>Application Layer (Layer 7):</strong> HTTP/HTTPS, SMTP, DNS, FTP, VoIP, and user-facing applications</li>
             </ol>
 
-            <h3>Common Protocols</h3>
+            <h3>Core Internet Protocols</h3>
             <div class="grid-2">
                 <div class="card">
-                    <h4>TCP/IP</h4>
-                    <p>Foundation of modern internet. Ensures reliable, ordered delivery of data packets.</p>
+                    <h4>🌐 TCP/IP Suite</h4>
+                    <p>Foundation of modern internet infrastructure. TCP ensures reliable, ordered packet delivery; IP provides logical routing capabilities.</p>
                 </div>
                 <div class="card">
-                    <h4>HTTP/HTTPS</h4>
-                    <p>Web communication protocol. HTTPS adds encryption for security.</p>
+                    <h4>🔒 HTTP/HTTPS</h4>
+                    <p>Web communication protocol with HTTPS providing cryptographic security for sensitive transactions and data confidentiality.</p>
                 </div>
                 <div class="card">
-                    <h4>DNS</h4>
-                    <p>Translates domain names to IP addresses for web browsing.</p>
+                    <h4>📋 DNS</h4>
+                    <p>Domain Name System translates human-readable domain names into numerical IP addresses, enabling intuitive internet navigation.</p>
                 </div>
                 <div class="card">
-                    <h4>SMTP/POP3</h4>
-                    <p>Email transmission and retrieval protocols.</p>
+                    <h4>📧 SMTP/POP3/IMAP</h4>
+                    <p>Email protocols managing message transmission (SMTP) and retrieval (POP3/IMAP) across distributed mail servers.</p>
                 </div>
                 <div class="card">
-                    <h4>FTP</h4>
-                    <p>File Transfer Protocol for secure file transmission.</p>
+                    <h4>📁 FTP/SFTP</h4>
+                    <p>File transfer protocols enabling secure data movement between remote systems with authentication and encryption.</p>
                 </div>
                 <div class="card">
-                    <h4>VoIP</h4>
-                    <p>Voice over IP for digital voice communication.</p>
+                    <h4>☎️ VoIP</h4>
+                    <p>Voice over IP technology converting analog voice signals to digital packets, enabling low-cost telephony over data networks.</p>
                 </div>
+            </div>
+
+            <h3>Protocol Stack Implementation</h3>
+            <div class="highlight">
+                <strong>Enterprise Implementation:</strong> Modern organizations deploy comprehensive protocol stacks supporting multiple simultaneous protocols. Quality of Service (QoS) mechanisms prioritize critical traffic (voice, video) while managing bandwidth for general data transfer, ensuring optimal network performance.
             </div>
         </section>
 
-        <!-- Section 5: Challenges & Future of Data Communication -->
-        <section id="future">
-            <h2>🚀 Challenges & Future Perspectives</h2>
+        <div class="section-divider"></div>
 
-            <h3>Current Challenges</h3>
+        <!-- SECTION 5: Future Challenges & Inspiration -->
+        <section id="future">
+            <h2>🚀 Section 4: Challenges & Emerging Technologies</h2>
+
+            <h3>Contemporary Communication Challenges</h3>
             <ul>
-                <li><strong>Bandwidth Limitations:</strong> Increasing demand for higher speeds and larger data transfer capacities</li>
-                <li><strong>Security Concerns:</strong> Protecting data from unauthorized access and cyber threats</li>
-                <li><strong>Latency Issues:</strong> Minimizing delay in real-time applications (gaming, video calls, autonomous vehicles)</li>
-                <li><strong>Interference & Noise:</strong> Managing signal degradation in wireless transmission</li>
-                <li><strong>Interoperability:</strong> Ensuring different systems and devices can communicate seamlessly</li>
-                <li><strong>Energy Efficiency:</strong> Reducing power consumption in large-scale networks</li>
+                <li><strong>Bandwidth Scarcity:</strong> Exponential data growth demands higher transmission speeds and expanded network capacity</li>
+                <li><strong>Cybersecurity Threats:</strong> Protecting confidential information from sophisticated attacks and unauthorized access</li>
+                <li><strong>Latency Minimization:</strong> Real-time applications (gaming, autonomous vehicles, remote surgery) require microsecond-level delays</li>
+                <li><strong>Signal Degradation:</strong> Managing interference and noise in wireless transmission environments</li>
+                <li><strong>Interoperability Requirements:</strong> Ensuring seamless communication across heterogeneous network technologies</li>
+                <li><strong>Energy Efficiency:</strong> Reducing power consumption in large-scale infrastructure while maintaining performance</li>
+                <li><strong>Scalability & Reliability:</strong> Supporting billions of connected devices with guaranteed service availability</li>
             </ul>
 
-            <h3>Emerging Technologies</h3>
+            <h3>Next-Generation Technologies</h3>
             <div class="grid-2">
                 <div class="card">
-                    <h4>5G & Beyond</h4>
-                    <p>Ultra-fast wireless communication enabling IoT and autonomous systems.</p>
+                    <h4>5G & 6G Networks</h4>
+                    <p>Ultra-high-speed wireless communication enabling IoT, autonomous systems, and immersive multimedia applications with minimal latency.</p>
                 </div>
                 <div class="card">
                     <h4>Quantum Communication</h4>
-                    <p>Quantum key distribution for unhackable communication.</p>
+                    <p>Quantum key distribution and quantum-resistant encryption providing theoretically unhackable secure communication channels.</p>
                 </div>
                 <div class="card">
                     <h4>AI & Machine Learning</h4>
-                    <p>Optimizing network performance and predicting failures.</p>
+                    <p>Intelligent network optimization, predictive failure analysis, and autonomous traffic management for superior performance.</p>
                 </div>
                 <div class="card">
-                    <h4>IoT Networks</h4>
-                    <p>Billions of connected devices requiring efficient communication.</p>
+                    <h4>Internet of Things (IoT)</h4>
+                    <p>Billions of connected smart devices requiring efficient, low-power communication protocols and distributed architecture.</p>
                 </div>
                 <div class="card">
                     <h4>Edge Computing</h4>
-                    <p>Processing data closer to source for reduced latency.</p>
+                    <p>Processing data at network periphery reduces latency and bandwidth requirements for real-time applications.</p>
                 </div>
                 <div class="card">
                     <h4>Satellite Internet</h4>
-                    <p>Global connectivity for remote and underserved areas.</p>
+                    <p>Global broadband coverage for remote regions through low-earth orbit constellations providing universal connectivity.</p>
                 </div>
             </div>
 
-            <h3>Future Outlook</h3>
-            <p>Data communication continues to evolve rapidly. The future promises unprecedented connectivity, faster speeds, and more intelligent networks. As we move toward Industry 4.0 and the metaverse, the importance of robust, secure, and efficient data communication systems cannot be overstated. Emerging technologies like 5G, quantum computing, and AI will shape how we communicate and transfer information in the decades to come.</p>
+            <h3>Professional Outlook</h3>
+            <p>The data communication landscape undergoes continuous evolution, driven by technological advancement and emerging societal requirements. Future systems will integrate artificial intelligence, quantum computing, and advanced cryptography to deliver unprecedented connectivity, security, and performance. As organizations embrace Industry 4.0 and digital transformation initiatives, sophisticated communication infrastructure becomes increasingly critical for competitive advantage and operational excellence.</p>
         </section>
 
-        <!-- Inspiration Section -->
+        <div class="section-divider"></div>
+
+        <!-- SECTION 5: Inspiration & Resources -->
         <section id="inspiration">
-            <h2>✨ What Inspires Me</h2>
-            <div class="inspiration-box">
-                <p>What truly inspires me about data communication is its fundamental role in connecting humanity. Every message sent, video call made, and piece of information shared represents the incredible achievement of billions of technological innovations working in harmony. The journey from Morse's telegraph to today's quantum-enabled networks demonstrates the power of human ingenuity and persistence.</p>
-                <p style="margin-top: 1rem;">I am particularly inspired by how data communication breaks down barriers—connecting people across continents instantly, enabling remote work and education, and empowering communities. The idea that a single bit of information can travel at the speed of light and reach anyone anywhere on Earth is truly remarkable. In a world where connectivity shapes opportunities, I see data communication as the backbone of progress and innovation.</p>
-                <p style="margin-top: 1rem;">As challenges like global connectivity gaps and cybersecurity threats persist, I am driven to contribute meaningfully to this field. I aspire to work on technologies that make communication more secure, faster, and accessible to everyone, regardless of their geographic or economic status. My dream is to be part of the innovation that bridges the digital divide and makes world-class communication infrastructure a reality for all.</p>
-            </div>
-        </section>
-
-        <!-- Resources & Links Section -->
-        <section id="resources">
-            <h2>📚 Resources & Assignment</h2>
+            <h2>✨ Section 5: Professional Vision & Resources</h2>
             
-            <h3>Links to Assignment & Reference Materials</h3>
+            <h3>Professional Inspiration & Career Vision</h3>
+            <div class="inspiration-box">
+                <p>Data communication represents humanity's most significant technological achievement—enabling instantaneous global connectivity that transcends geographic and temporal boundaries. Each digital transmission embodies centuries of scientific advancement and engineering excellence.</p>
+                <p style="margin-top: 1.5rem;">I am profoundly inspired by communication technology's transformative impact: connecting isolated communities, enabling remote work and education, and empowering unprecedented collaboration. The prospect that information travels at light speed across continents represents remarkable technological achievement.</p>
+                <p style="margin-top: 1.5rem;">My professional aspiration centers on developing secure, high-performance communication infrastructure addressing global connectivity challenges. I am committed to advancing network security, optimizing transmission efficiency, and expanding broadband access to underserved populations. Through dedicated research and innovation, I aim to contribute meaningfully to telecommunication infrastructure evolution.</p>
+            </div>
+
+            <h3>Academic Resources & Assignment Materials</h3>
             <div class="links-section">
                 <a href="https://github.com/oseialbert/datacomAssignment" target="_blank" class="link-card">
                     <h3>📂 GitHub Repository</h3>
-                    <p>View and download the complete assignment source code and resources from the GitHub repository.</p>
+                    <p>Access complete assignment source code, supporting documentation, and supplementary resources from the GitHub repository.</p>
                 </a>
                 
-                <a href="https://www.youtube.com/embed/n4r2VJGFv5A?autoplay=1&mute=1" target="_blank" class="link-card">
-                    <h3>📺 Learning Video</h3>
-                    <p>Watch an educational video explaining data communication fundamentals with practical examples.</p>
+                <a href="https://www.youtube.com/embed/n4r2VJGFv5A?autoplay=1&mute=0" target="_blank" class="link-card">
+                    <h3>📺 Educational Video</h3>
+                    <p>View comprehensive video explaining data communication fundamentals with practical demonstrations and case studies.</p>
                 </a>
 
                 <a href="https://github.com/oseialbert/datacomAssignment/raw/main/DataCommunication_Assignment.docx" target="_blank" class="link-card">
                     <h3>📄 Assignment Document</h3>
-                    <p>Download the complete assignment (Turnitin verified) in DOCX format for offline reading.</p>
+                    <p>Download complete assignment document (verified) in DOCX format for offline review and reference.</p>
                 </a>
             </div>
 
-            <h3 style="margin-top: 3rem;">Embedded Video Resource</h3>
-            <p>Watch the embedded video below (auto-plays with sound on):</p>
+            <h3 style="margin-top: 3rem;">📺 Embedded Educational Video</h3>
+            <p style="font-weight: 600;">Watch the embedded video below (auto-plays with audio):</p>
             <div class="video-container">
                 <iframe 
-                    src="https://www.youtube.com/embed/n4r2VJGFv5A?autoplay=1&mute=0&modestbranding=1&rel=0" 
+                    src="https://www.youtube.com/embed/n4r2VJGFv5A?autoplay=1&mute=0&modestbranding=1&rel=0&controls=1" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
+                    allowfullscreen
+                    loading="lazy">
                 </iframe>
             </div>
 
-            <h3 style="margin-top: 3rem;">Additional Learning Resources</h3>
+            <h3 style="margin-top: 3rem;">📚 Supplementary Learning Resources</h3>
             <div class="resources-grid">
                 <div class="resource-card">
-                    <h4>📖 IEEE Standards</h4>
-                    <p>International standards for network protocols and communication systems.</p>
+                    <h4>📖 IEEE & ITU Standards</h4>
+                    <p>International standards organizations providing technical specifications for protocols and communication systems.</p>
                 </div>
                 <div class="resource-card">
-                    <h4>🎓 Online Courses</h4>
-                    <p>Explore Coursera, edX, and Udemy for comprehensive data communication courses.</p>
+                    <h4>🎓 Professional Courses</h4>
+                    <p>Comprehensive certifications from Coursera, edX, and Udemy covering advanced data communication topics.</p>
                 </div>
                 <div class="resource-card">
-                    <h4>📡 Technical Blogs</h4>
-                    <p>Follow industry leaders and researchers discussing latest developments in data communication.</p>
+                    <h4>📡 Industry Publications</h4>
+                    <p>Leading journals and technical blogs discussing telecommunications innovations and best practices.</p>
                 </div>
                 <div class="resource-card">
-                    <h4>🔬 Research Papers</h4>
-                    <p>Access peer-reviewed articles on advanced topics in telecommunications and networking.</p>
+                    <h4>🔬 Research & Academia</h4>
+                    <p>Peer-reviewed publications exploring cutting-edge research in networking and communication systems.</p>
                 </div>
                 <div class="resource-card">
-                    <h4>🛠️ Practical Tools</h4>
-                    <p>Wireshark, Cisco Packet Tracer, and network simulators for hands-on learning.</p>
+                    <h4>🛠️ Network Simulation Tools</h4>
+                    <p>Professional software including Cisco Packet Tracer, Wireshark, and GNS3 for practical network design and analysis.</p>
                 </div>
                 <div class="resource-card">
-                    <h4>📊 Case Studies</h4>
-                    <p>Real-world implementations and solutions in enterprise networking environments.</p>
+                    <h4>📊 Enterprise Case Studies</h4>
+                    <p>Real-world implementation examples demonstrating successful communication infrastructure deployments.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Call to Action -->
-        <section style="text-align: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
-            <h2 style="color: white; border-bottom-color: white;">Ready to Explore More?</h2>
-            <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem;">Dive deeper into the world of data communication. Click the links above to access the full assignment and video tutorials!</p>
-            <p style="margin-top: 2rem; color: rgba(255, 255, 255, 0.8);">Use the navigation menu to jump to any section of this page.</p>
+        <!-- Call to Action Section -->
+        <section style="text-align: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-top: none;">
+            <h2 style="color: white; border: none;">Explore the Complete Analysis</h2>
+            <p style="color: rgba(255, 255, 255, 0.95); font-size: 1.1rem; line-height: 2;">This comprehensive study encompasses fundamental principles, historical context, modern transmission methods, protocol standards, and future technologies in data communication. Navigate through the sections above to explore each topic in detail.</p>
+            <p style="margin-top: 2rem; color: rgba(255, 255, 255, 0.9); font-weight: 600;">Use the navigation menu to access any section. All external links open in new tabs for seamless browsing.</p>
         </section>
     </div>
 
-    <!-- Footer -->
+    <!-- Professional Footer -->
     <footer>
-        <p>&copy; 2026 Osei Albert Prempeh | Data Communication Assignment</p>
-        <p>Student ID: PUIT/24210132 | <a href="https://github.com/oseialbert" style="color: #667eea; text-decoration: none;">GitHub Profile</a></p>
-        <p>Created with dedication to understanding modern data communication systems</p>
+        <p><strong>&copy; 2026 Osei Albert Prempeh | Data Communication Professional Study</strong></p>
+        <p>Student ID: <span class="badge">PUIT/24210132</span></p>
+        <p><a href="https://github.com/oseialbert">GitHub Profile</a> | Dedicated to advancing telecommunications and network engineering</p>
+        <p style="font-size: 0.9rem; color: #aaa; margin-top: 1rem;">Professional analysis of data communication systems, protocols, and emerging technologies</p>
     </footer>
 </body>
 </html>
